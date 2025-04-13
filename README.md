@@ -1,0 +1,2 @@
+# dwmkukso
+My dwm config
