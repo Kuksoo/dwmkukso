@@ -1,0 +1,10 @@
+
+static void alttab(const Arg *arg);
+
+
+
+
+void alttab(const Arg *arg) {
+    focusstack(arg);
+    zoom(arg);
+}
