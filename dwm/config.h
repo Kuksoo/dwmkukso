@@ -42,6 +42,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
         { "telegram-desktop", NULL, NULL,     1 << 1,       0,           -1 },
+	{ "discord",  NULL,	  NULL,	      1 << 6,	    0,		 -1 },
 	{ "tty-clock", NULL,	  NULL,	      1 << 0,       1,           -1 },
 };
 
@@ -132,10 +133,10 @@ static const Key keys[] = {
 	{ 0,                            XK_Print,  spawn,          {.v = flameshot } },
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          SHCMD("firefox") },
 	{ MODKEY|ShiftMask,             XK_t,      spawn,          SHCMD("telegram-desktop") },
-	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("dolphin") },
-	{ 0,               XF86XK_AudioMute, spawn,   SHCMD("pactl set-sink-mute 0 toggle") },
-	{ 0,           XF86XK_AudioLowerVolume, spawn, SHCMD("pactl set-sink-volume 0 -2%") },
-  	{ 0,           XF86XK_AudioRaiseVolume, spawn, SHCMD("pactl set-sink-volume 0 +2%") },
+	{ MODKEY|ShiftMask,             XK_e,      spawn,          SHCMD("doublecmd") },
+	{ 0,               XF86XK_AudioMute, spawn,   SHCMD("volumemute.sh") },
+	{ 0,           XF86XK_AudioLowerVolume, spawn, SHCMD("volume-.sh") },
+  	{ 0,           XF86XK_AudioRaiseVolume, spawn, SHCMD("volume+.sh") },
 	
 
 	TAGKEYS(                        XK_1,                      0)
