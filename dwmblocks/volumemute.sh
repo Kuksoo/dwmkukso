@@ -1,2 +1,2 @@
 #!/bin/bash
-pactl set-sink-mute 0 toggle && pkill -RTMIN+10 dwmblocks
+pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle && pkill -RTMIN+10 dwmblocks

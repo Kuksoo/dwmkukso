@@ -41,9 +41,10 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
-        { "telegram-desktop", NULL, NULL,     1 << 1,       0,           -1 },
+        { "Telegram", NULL, NULL,     1 << 1,       0,           -1 },
 	{ "discord",  NULL,	  NULL,	      1 << 6,	    0,		 -1 },
 	{ "tty-clock", NULL,	  NULL,	      1 << 0,       1,           -1 },
+	{ "steam",	NULL,	  NULL,	      1 << 2,       0,		 -1 },
 };
 
 /* layout(s) */
